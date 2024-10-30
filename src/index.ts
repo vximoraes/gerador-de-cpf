@@ -38,7 +38,6 @@ function gerarCpf(): string {
 
 // Validar o CPF gerado.
 function validarCpf(cpf: string): boolean {
-    console.log(`Validando o CPF: ${cpf}`)
     // Validar o primeiro digito verificador. 
     let resultadoSoma1: number = 0
 
