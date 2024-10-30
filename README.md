@@ -10,8 +10,8 @@ Este projeto é um **Gerador de CPF**, que utiliza cálculos matemáticos para g
 - Geração aleatória de um CPF válido.
 - Copia o CPF gerado para a área de transferência com um clique.
 
-## 🌐 Acesso ao site:
+## 🌐 Acesso ao site
 - [Gerador | CPF](https://vximoraes.github.io/gerador-de-cpf/)
 
-## 🤝 Contribuindo: 
+## 🤝 Contribuindo
 Sinta-se à vontade para contribuir com melhorias ou correções. Abra um issue ou faça um pull request caso necessário.
