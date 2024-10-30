@@ -150,17 +150,4 @@ footer {
         width: 100%; 
         max-width: none; 
     }
-
-    footer {
-        margin-top: 50px;
-        width: 100%; 
-        max-width: 290px; 
-        padding: 15px; 
-        margin: 0; 
-        text-align: center; 
-    }
-
-    .license {
-        font-size: 12px; 
-    }
 }
