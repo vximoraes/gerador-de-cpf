@@ -27,7 +27,7 @@ body {
     flex-grow: 1;
     justify-content: center;
     margin-top: 200px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 h1 {
@@ -138,6 +138,10 @@ footer {
 
 /*Responsividade*/
 @media (max-width: 600px) {
+    .container {
+        margin-bottom: 80px;
+    }
+
     h1 {
         font-size: 32px;
     }
