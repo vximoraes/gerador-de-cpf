@@ -1,7 +1,7 @@
 # 🔢 Gerador de CPF
 Este projeto é um **Gerador de CPF**, que utiliza cálculos matemáticos para gerar um CPF válido automaticamente.
 
-![gerador-de-cpf](https://github.com/user-attachments/assets/48ee76bb-257e-46a8-ac70-e88cd4eccfbe)
+![gerador-de-cpf](https://github.com/user-attachments/assets/3a2d3bc6-dbe9-418f-8dfa-0659454d56a5)
 
 ## 🛠️ Tecnologias
 <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
