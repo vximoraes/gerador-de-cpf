@@ -28,6 +28,7 @@ body {
     flex-grow: 1;
     justify-content: center;
     margin-top: 200px;
+    margin-bottom: 30px;
 }
 
 h1 {
