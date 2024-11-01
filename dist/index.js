@@ -55,13 +55,16 @@ function validarCpf(cpf) {
     // Retornar true: válido ou false: inválido.
     return (parseInt(cpf[9]) == primeiroDigitoVerificador && parseInt(cpf[10]) == segundoDigitoVerificador);
 }
+function formatarCpf(cpf) {
+    return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+}
 // Gerar e verificar um CPF até que seja um CPF válido.
 function gerarCpfValido() {
     let cpf;
     do {
         cpf = gerarCpf();
     } while (!validarCpf(cpf));
-    return cpf;
+    return formatarCpf(cpf);
 }
 (_a = document.querySelector('#gerarCpf')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', (e) => {
     e.preventDefault();

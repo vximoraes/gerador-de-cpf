@@ -62,13 +62,17 @@ function validarCpf(cpf: string): boolean {
     return (parseInt(cpf[9]) == primeiroDigitoVerificador && parseInt(cpf[10]) == segundoDigitoVerificador) 
 }
 
+function formatarCpf(cpf: string): string {
+    return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4')
+}
+
 // Gerar e verificar um CPF até que seja um CPF válido.
 function gerarCpfValido(): string {
     let cpf: string
     do {
         cpf = gerarCpf()
     } while (!validarCpf(cpf))
-    return cpf
+    return formatarCpf(cpf)
 }
 
 
