@@ -103,7 +103,6 @@ input[type="text"] {
 
 /*Footer*/
 .footer-container {
-    margin-top: 120px; 
     width: 100%;
     display: flex;
     justify-content: center;
@@ -117,7 +116,6 @@ footer {
     text-align: center;
     padding: 20px;
     margin-bottom: 0;
-    color: #ffffff;
 }
 
 .social-links {
@@ -129,20 +127,6 @@ footer {
 
 .social-links a {
     margin: 0 10px;
-}
-
-.footer-divider {
-    width: 100%;
-    border: none;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-.license {
-    margin: 20px 0;
-    font-size: 14px;
 }
 
 .social-links img {
@@ -163,4 +147,4 @@ footer {
         width: 100%;
         max-width: none;
     }
-}  
+}
