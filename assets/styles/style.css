@@ -139,7 +139,7 @@ footer {
 /*Responsividade*/
 @media (max-width: 600px) {
     .container {
-        margin-bottom: 100px;
+        margin-bottom: 90px;
     }
 
     h1 {
