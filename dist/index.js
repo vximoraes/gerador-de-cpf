@@ -38,7 +38,6 @@ function gerarCpf() {
 }
 // Validar o CPF gerado.
 function validarCpf(cpf) {
-    console.log(`Validando o CPF: ${cpf}`);
     // Validar o primeiro digito verificador. 
     let resultadoSoma1 = 0;
     for (let i = 0; i < 9; i++) {
@@ -67,9 +66,14 @@ function gerarCpfValido() {
 (_a = document.querySelector('#gerarCpf')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', (e) => {
     e.preventDefault();
     const cpfGerado = document.querySelector('#saida');
+    const copiarBtn = document.querySelector('#copiarCpf');
     const cpf = gerarCpfValido();
     if (cpfGerado) {
         cpfGerado.value = `${cpf}`;
+        // Reseta o botão "Copiar CPF" para o estado original (ícone de copiar)
+        if (copiarBtn) {
+            copiarBtn.innerHTML = '<img src="./assets/images/copiar.png" alt="Copiar">';
+        }
     }
     else {
         console.error('Elemento #saida não encontrado');
@@ -78,10 +82,15 @@ function gerarCpfValido() {
 (_b = document.querySelector('#copiarCpf')) === null || _b === void 0 ? void 0 : _b.addEventListener('click', (e) => __awaiter(void 0, void 0, void 0, function* () {
     e.preventDefault();
     const cpfGerado = document.querySelector('#saida');
-    if (cpfGerado) {
+    const copiarBtn = document.querySelector('#copiarCpf');
+    if (cpfGerado && copiarBtn) {
         try {
             yield navigator.clipboard.writeText(cpfGerado.value);
-            alert('CPF copiado para a área de transferência!');
+            // Altera o botão para o ícone "Copiado".
+            copiarBtn.innerHTML = '<img src="./assets/images/copiado.png" alt="Copiado">';
+            setTimeout(() => {
+                copiarBtn.innerHTML = '<img src="./assets/images/copiar.png" alt="Copiar">';
+            }, 3000);
         }
         catch (err) {
             console.error('Erro ao copiar o CPF:', err);
