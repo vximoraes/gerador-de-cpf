@@ -88,7 +88,7 @@ document.querySelector('#gerarCpf')?.addEventListener('click', (e) => {
 
         // Reseta o botão "Copiar CPF" para o estado original (ícone de copiar)
         if (copiarBtn) {
-            copiarBtn.innerHTML = '<img src="./assets/images/copiar.png" alt="Copiar">'
+            copiarBtn.innerHTML = '<img src="src/assets/images/copiar.png" alt="Copiar" style="filter: brightness(0) invert(1);">'
         }
     } else {
         console.error('Elemento #saida não encontrado') 
@@ -106,10 +106,10 @@ document.querySelector('#copiarCpf')?.addEventListener('click', async (e) => {
             await navigator.clipboard.writeText(cpfGerado.value)
 
             // Altera o botão para o ícone "Copiado".
-            copiarBtn.innerHTML = '<img src="./assets/images/copiado.png" alt="Copiado">'
+            copiarBtn.innerHTML = '<img src="src/assets/images/copiado.png" alt="Copiado" style="filter: brightness(0) invert(1);">'
 
             setTimeout(() => {
-                copiarBtn.innerHTML = '<img src="./assets/images/copiar.png" alt="Copiar">'
+                copiarBtn.innerHTML = '<img src="src/assets/images/copiar.png" alt="Copiar" style="filter: brightness(0) invert(1);">'
             }, 3000)
         } catch (err) {
             console.error('Erro ao copiar o CPF:', err)
