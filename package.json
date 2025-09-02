@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/ts/index.ts",
+    "dev": "nodemon src/index.ts",
     "start": "node dist/index.js",
     "build": "tsc"
   },
@@ -13,5 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
